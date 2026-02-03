@@ -10,7 +10,7 @@ This project explores historical ATP tennis match data to identify the key facto
 
 ## Data
 
-The data is sourced from the publically available Jeff Sackmann ATP database [Jeff Sackmann ATP database](https://github.com/JeffSackmann), which contains detailed match-level data for professional tennis matches.
+The data is sourced from the publically available [Jeff Sackmann ATP database](https://github.com/JeffSackmann), which contains detailed match-level data for professional tennis matches.
 
 ## Feature Engineering
 

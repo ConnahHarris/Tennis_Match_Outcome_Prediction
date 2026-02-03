@@ -25,7 +25,7 @@ The expected probability of Player 1 winning a match ($P_1$) is calculated as:
 
 $P_1 = \frac{1}{1 + 10^{(E_2 - E_1)/400}}$
 
-Where $E_1$ and $E_2$ represent the pre-match ELO ratings of Player 1 and Player 2 respectively
+Where $E_1$ and $E_2$ represent the pre-match ELO ratings of Player 1 and Player 2, respectively.
 
 Following the match, Player's ELO ratings are updated using:
 

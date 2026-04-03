@@ -10,11 +10,11 @@ This project explores historical ATP tennis match data to identify the key facto
 
 ## Data
 
-The data is sourced from the publically available [Jeff Sackmann ATP database](https://github.com/JeffSackmann), which contains detailed match-level data for professional tennis matches.
+The data is sourced from the publicly available [Jeff Sackmann ATP database](https://github.com/JeffSackmann), which contains detailed match-level data for professional tennis matches.
 
 ## Feature Engineering
 
-The data was first cleaned by removing or correcting anomolous entries. The majority of these anomolous data was missing and could not be sourced using Wikipedia or the official ATP website. In other cases, erroneous values were found like the player Jorge Brian Panta Herreros being listed with a height of just 3 cm.
+The data was first cleaned by removing or correcting anomalous entries. The majority of these anomalous data was missing and could not be sourced using Wikipedia or the official ATP website. In other cases, erroneous values were found like the player Jorge Brian Panta Herreros being listed with a height of just 3 cm.
 
 Following the data cleaning, the match entries were ordered chronologically using the start date of the tournament and followed by the round of the tournament ("Q1", "Q2", "Q3", "R128", "R64", "R32", "R16", "QF", "SF", "F"). 
 
@@ -35,7 +35,7 @@ Where $S_1 \in \{0,1\}$ indicates if Player 1 won the match, and $K$ is a scalin
 
 A surface ELO was calculated using the same methodology, but only calculating this metric for each player on a specific surface. 
 
-The data was plotted to look for the prediciton power of these newly engineered features, shown in figure 1. 
+The data was plotted to look for the prediction power of these newly engineered features, shown in figure 1. 
 
 
 <table align="center">

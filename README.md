@@ -33,7 +33,9 @@ $E_1' = E_1 + K \cdot (S_1 - P_1)$
 
 Where $S_1 \in \{0,1\}$ indicates if Player 1 won the match, and $K$ is a scaling factor set to 32.  
 
-Secondly, a surface ELO was calculated in the same way as the ELO but only calculating this metric for each player on a specific surface. 
+A surface ELO was calculated using the same methodology, but only calculating this metric for each player on a specific surface. 
+
+
 
 <table align="center">
   <tr>

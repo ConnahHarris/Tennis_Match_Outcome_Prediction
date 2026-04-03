@@ -35,19 +35,22 @@ Where $S_1 \in \{0,1\}$ indicates if Player 1 won the match, and $K$ is a scalin
 
 A surface ELO was calculated using the same methodology, but only calculating this metric for each player on a specific surface. 
 
+The data was plotted to look for the prediciton power of these newly engineered features, shown in figure 1. 
 
 
 <table align="center">
   <tr>
-    <td><img src="Figures/age_difference.png" width="500"></td>
-    <td><img src="Figures/height_difference.png" width="500"></td>
-  </tr>
-  <tr>
     <td><img src="Figures/elo_difference.png" width="500"></td>
+  </tr>
+  <tr></tr>
     <td><img src="Figures/surface_elo_difference.png" width="500"></td>
   </tr>
-  <tr>
-    <td><img src="Figures/head_2_head_difference.png" width="500"></td>
-    <td><img src="Figures/career_wins_difference.png" width="500"></td>
-  </tr>
 </table>
+
+<p align="center">
+  <em>
+    Figure: Distribution of tennis match outcomes based on Elo rating differences. 
+    The plots show how often the player with the higher Elo rating wins, including 
+    both overall Elo differences and surface-specific Elo differences.
+  </em>
+</p>

@@ -50,7 +50,7 @@ The data was plotted to look for the prediciton power of these newly engineered 
 <p align="center">
   <em>
     Figure 1: Distribution of tennis match outcomes based on Elo rating differences. 
-    The plots show how often the player with the higher Elo rating wins, including 
+    The plots show how frequently the higher-rated player (by Elo) wins, considering 
     both overall Elo differences and surface-specific Elo differences.
   </em>
 </p>

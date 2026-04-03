@@ -6,17 +6,25 @@
 
 ## Project Overview
 
-This project explores historical ATP tennis match data to identify the key factors that influence match outcomes and to build a machine learning model capable of predicting the winner of future matches.
+This project develops a time-aware machine learning pipeline to predict ATP tennis match outcomes using historical match data. 
+
+The focus of the project is not only on predictive performance, but on building a realistic and robust modelling framework. This includes handling messy real-world data, engineering sequential player features, and ensuring that all features and evaluations respect the chronological nature of the data.
 
 ## Data
 
-The data is sourced from the publicly available [Jeff Sackmann ATP database](https://github.com/JeffSackmann), which contains detailed match-level data for professional tennis matches.
+The data is sourced from the publicly available [Jeff Sackmann ATP database](https://github.com/JeffSackmann), which contains detailed match-level data for professional tennis matches. 
+
+The dataset used in this project consisted of approximately 100,000 matches and includes a range of inconsistencies and missing values. As a result, a significant portion of the work involved cleaning, validating and restructuring the data before it could be used for analysis and modelling.
 
 ## Feature Engineering
 
-The data was first cleaned by removing or correcting anomalous entries. The majority of these anomalous data was missing and could not be sourced using Wikipedia or the official ATP website. In other cases, erroneous values were found like the player Jorge Brian Panta Herreros being listed with a height of just 3 cm.
+The raw dataset was first cleaned by identifying and removing or correcting anomalous entries. Many of these anomalies were due to missing data that could not be reliably recovered from external sources such as Wikipedia or official ATP records. In other cases, clearly erroneous values were identified (e.g. a player listed with a height of 3 cm), which were corrected or excluded.
 
-Following the data cleaning, the match entries were ordered chronologically using the start date of the tournament and followed by the round of the tournament ("Q1", "Q2", "Q3", "R128", "R64", "R32", "R16", "QF", "SF", "F"). 
+Following data cleaning, all matches were ordered chronologically using the tournament start date and round ("Q1", "Q2", "Q3", "R128", "R64", "R32", "R16", "QF", "SF", "F"). This chronological ordering is essential to ensure that all engineered features are based only on information available prior to each match, preventing data leakage.
+
+This chronological structure also forms the foundation for all subsequent feature engineering, ensuring that player statistics such as Elo ratings, recent form, and head-to-head records are computed in a time-consistent manner.
+
+
 
 ### ELO Calculations
 The first feature engineered was player's ELO ratings, a tool is most commonly used in chess to rank players based on their relative ability. Every player without any previous match history has their ELO set to 1500.

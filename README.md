@@ -42,14 +42,14 @@ The data was plotted to look for the prediciton power of these newly engineered 
   <tr>
     <td><img src="Figures/elo_difference.png" width="500"></td>
   </tr>
-  <tr></tr>
+  <tr>
     <td><img src="Figures/surface_elo_difference.png" width="500"></td>
   </tr>
 </table>
 
 <p align="center">
   <em>
-    Figure: Distribution of tennis match outcomes based on Elo rating differences. 
+    Figure 1: Distribution of tennis match outcomes based on Elo rating differences. 
     The plots show how often the player with the higher Elo rating wins, including 
     both overall Elo differences and surface-specific Elo differences.
   </em>
